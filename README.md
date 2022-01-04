@@ -7,7 +7,7 @@
 
 ## HISTORY: 
 ## JO - Tuesday 4th January 2022 - Initial Version (1.0)
-## JO - Tueaday 4th January 2022 - Added (-v) flag to ammand line arguments to facilitate TicerRobot1() or TickerRobot2() functionality
+## JO - Tueaday 4th January 2022 - Added (-v) flag to Command line arguments to facilitate TicerRobot1() or TickerRobot2() functionality
 
 ## Usage
 
@@ -38,12 +38,12 @@
 Please acknowledge receipt of this email
 Please provide a link to a public Git repo containing your solution
 Commit to the same repo at least at the completion of each part.
-Feel free to document any assumptions you’ve made if the requirements are not clear (intentionally or otherwise – we’re not expecting questions during the test, so do your best and make assumptions as necessary).
-We’d like to see solution in either JavaScript or preferably TypeScript
-We’d like to see unit tests demonstrating correctness of your solution
-Please email to advise when the last commit per part is done, and we’ll email you the next part.
-There are 3 parts in total – we’d expect most candidates to complete parts 1 and 2, and part 3 as a stretch goal.
-We’d advise spending no more than 2 hours total – hopefully it’s a fun puzzle to demonstrate how you tend to approach problems.
+Feel free to document any assumptions youâ€™ve made if the requirements are not clear (intentionally or otherwise â€“ weâ€™re not expecting questions during the test, so do your best and make assumptions as necessary).
+Weâ€™d like to see solution in either JavaScript or preferably TypeScript
+Weâ€™d like to see unit tests demonstrating correctness of your solution
+Please email to advise when the last commit per part is done, and weâ€™ll email you the next part.
+There are 3 parts in total â€“ weâ€™d expect most candidates to complete parts 1 and 2, and part 3 as a stretch goal.
+Weâ€™d advise spending no more than 2 hours total â€“ hopefully itâ€™s a fun puzzle to demonstrate how you tend to approach problems.
  
 
 
