@@ -5,11 +5,21 @@
 
 ## REASON:  Ticker Technical Test - Welcome to Arachnid Robotics
 
-## HISTORY: Tuesday 4th January 2022 - Initial Version (1.0)
+## HISTORY: 
+## JO - Tuesday 4th January 2022 - Initial Version (1.0)
+## JO - Tueaday 4th January 2022 - Added (-v) flag to ammand line arguments to facilitate TicerRobot1() or TickerRobot2() functionality
 
 ## Usage
 
 - `npm start -- --instructions="<input>"` (where `<input>` is the input string)
+
+
+## -v 
+
+- Adding the optional v flag `--v=2` will run TickerRobot2 software
+
+
+
 
 ### Assumptions
 
@@ -19,6 +29,11 @@
 - F / B Commands affect the Y Axis +/-1
 - L / R Commands affect the X Axis -/+1
 
+
+  Part 2
+  Any B = BACKWARD command is ignored, i.e. in the t2.ts SWITCH statement we ignore 'B' commands.
+  
+  
 ### Ticker Technical Test
 Please acknowledge receipt of this email
 Please provide a link to a public Git repo containing your solution
@@ -31,11 +46,13 @@ There are 3 parts in total – we’d expect most candidates to complete parts 1 and
 We’d advise spending no more than 2 hours total – hopefully it’s a fun puzzle to demonstrate how you tend to approach problems.
  
 
+
+
 ********************
 
- 
+## VERSION 1 - Ticker Robot 1
 
-### Welcome to Arachnid Robotics, delivering you Robot Spiders(TM) for all your robotic spider needs
+### Part 1 - Welcome to Arachnid Robotics, delivering you Robot Spiders(TM) for all your robotic spider needs
 
  
 
@@ -102,6 +119,48 @@ Here's some test data:
 3,6,FFFFFFFFRRRRRRRFFFFLLLBBRRRRRLLLLLLLLLRFFF = ?
 
 0,7,RRRRRRRRFFFFFFFFFFFLLLBBBBBRRRLLLLLFFLR =?
+
+
+******************
+
+
+## VERSION 2 - Ticker Robot 2
+
+### Part 2 - Welcome to Arachnid Robotics, delivering you Robot Spiders(TM) for all your robotic spider needs
+
+The mk2 has just arrived on my desk. Those robot nerds in white coats sure love cranking out these prototypes.
+
+ 
+
+This robot has a few more bells and whistles, and this one is actually being prepped for a real life mission in the field!
+
+ 
+
+So, management thought the robot scuttling from side to side was too "crab like" for a spider (sigh. marketing), so they 
+
+want us to change the nav code to support the new rotation servo underneath the robot. 
+
+ 
+
+A L or R command will now rotate the robot 90 degrees to the left or right, so now the F (Forwards) command will go in the direction the robot is facing. 
+
+Management also thought the robot going backwards blindly was a bad idea after we lost that one into the fire pit, so now we need to turn it around and go in the direction we're facing if we need to head back the way we came.
+
+ 
+
+The most exciting feature of the mk2 though is it's ability to GO UP WALLS :| It has sucker pads to stick to glass, and the first client for the mk2 wants to do glass inspections on high rise buildings.
+
+So, same deal, we're going to provide the robot with a starting position on the glass, oriented from bottom, left (0,0) but we need to STOP the robot falling off the side of the building. 
+
+ 
+
+So, the robot should ignore a command asking it to go into negative space. No more dead robots. RIP Kevin.
+
+ 
+
+We still need to support the 500 mk1's we've got roaming around the place, so we'll need a strategy to cope with that somehow.
+
+
 
 ## Run the test cases
 

@@ -1,4 +1,4 @@
-export class TickerRobot {
+export class TickerRobot1 {
     instruct(input: string) {
         const inputs: string[] = input.split(",");
         

@@ -1,17 +1,25 @@
 import { TickerRobot1 } from './tr1';
+import { TickerRobot2 } from './tr2';
 import { parse } from 'ts-command-line-args';
 
 interface ICommandArgs {
     instructions: string;
-    version?: number;
+    v?: number;
 }
 
 const commandArgs = parse<ICommandArgs>(
     {
         instructions: String,
+        v: { type: Number, optional: true }
     }
 )
 
-    const tr1 = new TickerRobot1();
-    console.log(tr1.instruct(commandArgs.instructions));
+switch (v) {
+              case 2:
+                const tr2 = new TickerRobot2();
+                console.log(tr2.instruct(commandArgs.instructions));
+              case 1:
+                const tr1 = new TickerRobot1();
+                console.log(tr1.instruct(commandArgs.instructions));
+            }
 
