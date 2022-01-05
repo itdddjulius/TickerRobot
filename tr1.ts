@@ -3,7 +3,7 @@ export class TickerRobot1 {
         const inputs: string[] = input.split(",");
         
         if (inputs.length !== 3) {
-            return "ERROR: Input not in correct format!"
+            return "Invalid Input"
         }
         
         let x: number = +inputs[0];

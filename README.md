@@ -7,7 +7,8 @@
 
 ## HISTORY: 
 ## JO - Tuesday 4th January 2022 - Initial Version (1.0)
-## JO - Tueaday 4th January 2022 - Added (-v) flag to Command line arguments to facilitate TicerRobot1() or TickerRobot2() functionality
+## JO - Tueaday 4th January 2022 - Added (-v) flag to Command Line Arguments to facilitate TicerRobot1() or TickerRobot2() functionality
+## JO - Wednesday 5th January 2022 - Added BOOST, to enable variable amounts of SPEED to be applied 
 
 ## Usage
 
@@ -38,12 +39,12 @@
 Please acknowledge receipt of this email
 Please provide a link to a public Git repo containing your solution
 Commit to the same repo at least at the completion of each part.
-Feel free to document any assumptions youâ€™ve made if the requirements are not clear (intentionally or otherwise â€“ weâ€™re not expecting questions during the test, so do your best and make assumptions as necessary).
-Weâ€™d like to see solution in either JavaScript or preferably TypeScript
-Weâ€™d like to see unit tests demonstrating correctness of your solution
-Please email to advise when the last commit per part is done, and weâ€™ll email you the next part.
-There are 3 parts in total â€“ weâ€™d expect most candidates to complete parts 1 and 2, and part 3 as a stretch goal.
-Weâ€™d advise spending no more than 2 hours total â€“ hopefully itâ€™s a fun puzzle to demonstrate how you tend to approach problems.
+Feel free to document any assumptions you’ve made if the requirements are not clear (intentionally or otherwise – we’re not expecting questions during the test, so do your best and make assumptions as necessary).
+We’d like to see solution in either JavaScript or preferably TypeScript
+We’d like to see unit tests demonstrating correctness of your solution
+Please email to advise when the last commit per part is done, and we’ll email you the next part.
+There are 3 parts in total – we’d expect most candidates to complete parts 1 and 2, and part 3 as a stretch goal.
+We’d advise spending no more than 2 hours total – hopefully it’s a fun puzzle to demonstrate how you tend to approach problems.
  
 
 
@@ -51,6 +52,8 @@ Weâ€™d advise spending no more than 2 hours total â€“ hopefully itâ€™s a fun puz
 ********************
 
 ## VERSION 1 - Ticker Robot 1
+
+## JO - Tuesday 4th January 2022 - Initial Version (1.0)
 
 ### Part 1 - Welcome to Arachnid Robotics, delivering you Robot Spiders(TM) for all your robotic spider needs
 
@@ -126,7 +129,10 @@ Here's some test data:
 
 ## VERSION 2 - Ticker Robot 2
 
+## JO - Tueaday 4th January 2022 - Added (-v) flag to Command Line Arguments to facilitate TicerRobot1() or TickerRobot2() functionality
+
 ### Part 2 - Welcome to Arachnid Robotics, delivering you Robot Spiders(TM) for all your robotic spider needs
+
 
 The mk2 has just arrived on my desk. Those robot nerds in white coats sure love cranking out these prototypes.
 
@@ -160,6 +166,81 @@ So, the robot should ignore a command asking it to go into negative space. No mo
 
 We still need to support the 500 mk1's we've got roaming around the place, so we'll need a strategy to cope with that somehow.
 
+
+**************************
+
+
+
+## VERSION 3 - Ticker Robot 3
+
+## JO - Wednesday 5th January 2022 - Added BOOST, to enable variable amounts of SPEED to be applied 
+
+### Part 3 - Welcome to Arachnid Robotics, delivering you Robot Spiders(TM) for all your robotic spider needs
+
+
+Apparently there's a spray gun attachment coming for mk2. That'll be exciting. 
+
+ 
+
+But not as exciting as the mk3 that's just landed on my desk. This puppy has ROCKETS.
+
+ 
+
+So, the boys in the lab got a tad excited, granted, but they do have a purpose. Apparently we're sending a few of our robot buddies into Mars on a rocket! 
+
+Management feel they are totally ready for this challenge and have obviously given us loads of time to test and make sure we're ready for the big launch on Tuesday.
+
+ 
+
+Apparently on Mars it's rocky and there are canyons. Who knew. 
+
+ 
+
+We've equipped the mk3 with a small fuel tank of propellant and rockets that can propel them forward really quite quickly. 
+
+ 
+
+Good thing we made that change to point the little guy in a straight line all the time eh?
+
+ 
+
+Anyway - it looks like we'll need to tweak your nav code one more time, but still supporting the mk1's doing car park cleaning (poor mk1s) and the mk2's on high rises with glass inspections.
+
+ 
+
+Forward instructions can now have a number in front of them. 3F, 5F etc
+
+ 
+
+Conveniently boosting into space over canyons forward 1 position burns 1 unit of fuel. 
+
+The tank contains 30 units of fuel.
+
+You can boost up to 5 units in one go before the thing overheats.
+
+ 
+
+FFF5FLFFRF2F
+
+ 
+
+Until the sensor gear is finally ready, the guys are going to scout out the landscape from the satelites in orbit and continue to tell the robot where to go in advance.
+
+ 
+
+Given a start (x,y), and a set of nav commands, now including forward boosts, lemme know where the robot will end up.
+
+ 
+
+Oh, negative space is fine on Mars BTW. No building edges to fall off.
+
+ 
+
+0,0 FFFFFF3FLFFFFFFR5FL
+
+4,3 FFFFFFFF5FRFFFFFF3FRFFFFFFLFFFFF5FFF5FFFFFFFLFFFFF
+
+ 
 
 
 ## Run the test cases
